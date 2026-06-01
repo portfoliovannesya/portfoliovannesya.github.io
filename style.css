@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth; /* Membuat transisi antar tombol halus */
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,7 +18,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background-color: #2D4331; /* Hijau Tua sesuai gambar */
+    background-color: #2D4331; 
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -170,7 +170,22 @@ body {
     margin-bottom: 25px;
 }
 
+.project-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px;                     
+}
 
+
+.img-project {
+    width: 100%;
+    height: auto;
+    border: 3px solid #000;     
+}
+#project h3, #project p {
+    font-family: sans-serif;
+    margin: 8px 0;
+}
 
 
 .about-right {
@@ -201,7 +216,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 15px 15px 0 #F39C12;
+
 }
+#project {
+    background-color: #263c28;
+    padding: 50px 30px;
+}
+
+
+#project h2, #project h3, #project p {
+    color: #ffffff; 
+}
+
+
+
 
 /* --- EDU & EXP SECTION --- */
 .edu-exp {
@@ -280,9 +308,9 @@ body {
 /* --- FOOTER --- */
 /* --- FOOTER STYLES --- */
 .footer-section {
-    background-color: #ffffff; /* Latar belakang bersih */
+    background-color: #ffffff; 
     padding: 80px 5% 40px 5%;
-    border-top: 5px solid #2d4331; /* Garis pembatas hijau tua */
+    border-top: 5px solid #2d4331; 
     position: relative;
     overflow: hidden;
 }
@@ -290,7 +318,7 @@ body {
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end; /* Membuat teks sejajar di bagian bawah */
+    align-items: flex-end; 
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -298,9 +326,9 @@ body {
 /* Styling Nama Outline (Kiri) */
 .brand-outline {
     font-family: 'Archivo Black', sans-serif;
-    font-size: clamp(3rem, 10vw, 8rem); /* Ukuran fleksibel sesuai layar */
+    font-size: clamp(3rem, 10vw, 8rem); 
     color: transparent;
-    -webkit-text-stroke: 2px #2d4331; /* Garis tepi hijau tua */
+    -webkit-text-stroke: 2px #2d4331;
     margin: 0;
     line-height: 0.8;
     letter-spacing: -2px;
@@ -331,10 +359,9 @@ body {
 .address-icon {
     margin-top: 10px;
     font-size: 1.2rem;
-    color: #f39c12; /* Warna oranye aksen */
+    color: #f39c12; 
 }
 
-/* Garis dekoratif paling bawah */
 .footer-bottom-bar {
     height: 10px;
     background-color: #2d4331;
